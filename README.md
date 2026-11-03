@@ -3,10 +3,10 @@
 A high-performance C++ implementation of the 2D Ising model using the Metropolis algorithm. The simulation is parallelized using OpenMP to sweep across multiple temperatures simultaneously, significantly reducing wall-clock time.
 
 ## Physics Validation
-The simulation accurately reproduces the Onsager exact solution for the 2D Ising model. As seen in the output, the system undergoes a phase transition at the critical temperature \(T_c \approx 2.269\):
-*   **Ordered Phase (T=2.0):** Spontaneous magnetization \(|m| \approx 0.91\).
-*   **Critical Point (T=2.269):** Magnetization drops sharply to \(|m| \approx 0.53\).
-*   **Disordered Phase (T=3.0):** Thermal fluctuations destroy order, \(|m| \approx 0.08\).
+The simulation accurately reproduces the Onsager exact solution for the 2D Ising model. As seen in the output, the system undergoes a phase transition at the critical temperature $T_c \approx 2.269$
+*   **Ordered Phase (T=2.0):** Spontaneous magnetization $|m| \approx 0.91$
+*   **Critical Point (T=2.269):** Magnetization drops sharply to $|m| \approx 0.53$
+*   **Disordered Phase (T=3.0):** Thermal fluctuations destroy order, $|m| \approx 0.08$
 
 ## Performance & Scaling (OpenMP)
 Benchmarked on an 8-core AMD Ryzen 7 5850U (Zen 3 architecture, Fedora Linux). 
